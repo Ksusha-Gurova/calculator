@@ -1,6 +1,8 @@
 package com.example.calculator.service;
 
-@org.springframework.stereotype.Service
+import org.springframework.stereotype.Service;
+
+@Service
 public class CalculatorServiceImpl implements CalculatorService {
     @Override
     public Double sum(Double firstArg, Double secondArg) {
