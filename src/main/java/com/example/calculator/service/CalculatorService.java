@@ -7,5 +7,5 @@ public interface CalculatorService {
 
     Double mult(Double firstArg, Double secondArg);
 
-    Object div(Double firstArg, Double secondArg);
+    Double div(Double firstArg, Double secondArg);
 }

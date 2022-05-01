@@ -33,7 +33,7 @@ public class CalculatorController {
     }
 
     @GetMapping("/div")
-    public Object div (@RequestParam Double firstArg, @RequestParam Double secondArg) {
+    public Double div (@RequestParam Double firstArg, @RequestParam Double secondArg) {
         return calculatorService.div(firstArg, secondArg);
     }
 }

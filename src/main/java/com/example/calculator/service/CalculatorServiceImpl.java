@@ -20,9 +20,9 @@ public class CalculatorServiceImpl implements CalculatorService {
     }
 
     @Override
-    public Object div(Double firstArg, Double secondArg) {
+    public Double div(Double firstArg, Double secondArg) {
         if (secondArg == 0){
-            return "Деление на ноль";
+            throw new ArithmeticException("Деление на ноль невозможно!");
         }
         return firstArg / secondArg;
     }
